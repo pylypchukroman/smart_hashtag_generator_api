@@ -37,12 +37,12 @@ Start the API:
 npm run dev
 ```
 
-By default, the API runs at `http://localhost:5000`.
+By default, the API runs at `http://localhost:5050`.
 
 ## Environment Variables
 
 ```env
-PORT=5000
+PORT=5050
 CLIENT_ORIGIN=http://localhost:3000
 OPENAI_API_KEY=
 OPENAI_MODEL=gpt-4o-mini
@@ -90,7 +90,7 @@ Example:
 
 ```js
 async function generateHashtags(topic) {
-  const response = await fetch('http://localhost:5000/api/generate-hashtags', {
+  const response = await fetch('http://localhost:5050/api/generate-hashtags', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
